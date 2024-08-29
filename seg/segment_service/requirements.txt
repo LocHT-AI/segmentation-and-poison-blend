@@ -1,0 +1,11 @@
+opencv-python
+pyyaml
+numpy
+supervision
+flask
+ultralytics
+Pillow 
+scipy 
+pyamg 
+matplotlib 
+scikit-image

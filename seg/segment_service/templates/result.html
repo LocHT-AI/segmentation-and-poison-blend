@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Results</title>
+</head>
+<body>
+    <h1>Object Detection Results</h1>
+    
+    <h2>Input Images</h2>
+    <img src="{{ input_image1 }}" alt="Input Image 1">
+    <img src="{{ input_image2 }}" alt="Input Image 2">
+    
+    <h2>Classification Results:</h2>
+    
+    <h3>Image 1</h3>
+    <ul>
+        {% for result in segment_result1 %}
+            <li>{{ result }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h3>Image 2</h3>
+    <ul>
+        {% for result in segment_result2 %}
+            <li>{{ result }}</li>
+        {% endfor %}
+    </ul>
+    
+    
+    <!-- Button to go back to the main page (index.html) -->
+    <a href="/">
+        <button type="button">Go Back to Start</button>
+    </a>
+</body>
+</html>

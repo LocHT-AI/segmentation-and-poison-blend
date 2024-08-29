@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection App</title>
+</head>
+<body>
+    <h1>Object Detection App</h1>
+
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="image">Choose an image:</label>
+        <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png" required>
+        <br>
+        <button type="submit">Detect Objects</button>
+    </form>
+
+    {% if input_image %}
+        <h2>Input Image</h2>
+        <img src="{{ input_image }}" alt="Input Image" style="max-width: 100%;">
+
+        <!-- {% if result_image %}
+            <h2>Result Image</h2>
+            <img src="{{ result_image }}" alt="Result Image" style="max-width: 100%;">
+        {% endif %} -->
+    {% endif %}
+</body>
+</html>

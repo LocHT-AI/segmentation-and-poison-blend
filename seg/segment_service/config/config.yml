@@ -1,0 +1,19 @@
+cameras:
+  - id: CAM1
+  # - id: CAM2
+  # - id: CAM3
+  # - id: CAM4
+# - id: CAM127
+# - id: Gate2Left
+# - id: Gate2Right
+
+# model: mode/team1-team2-v2-20231031T181037Z-001/team1-team2-v2/weights/best.pt
+model:
+  model-seg: model/yolov8x-seg.pt
+  model-pose: model/yolov8x-pose.pt
+
+
+log:
+  verbose: True
+  logdir: './logging'
+  logfile: 'tracking_service.log'

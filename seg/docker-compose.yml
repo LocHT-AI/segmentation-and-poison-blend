@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+
+  segment_service:
+    container_name: segment_service
+    build: ./segment_service
+    image: pose:object
+  
+    volumes:
+      - ./segment_service:/app
+    ports:
+      - 5000:5000
+    command: [ 'python3', 'server_flask.py' ]
+    
